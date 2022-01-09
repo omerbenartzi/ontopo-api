@@ -28,7 +28,7 @@ def find_in_month(month: int, size: int, time: str, restaurant: str) -> List[Tup
             {"size": size, "date": date, "time": time})
         if ans["method"] not in ["standby", "disabled"]:
             found.append((day, month, time, size))
-
+    print()
     return found
 
 def main():
